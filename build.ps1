@@ -210,9 +210,39 @@ $ModuleConfigXML = @'
 
 $ModuleConfigXML | Set-Content -Encoding utf8NoBOM -Path $FomodModuleConfigFile
 
+$bbcode = [System.Text.StringBuilder]::New()
+$inList = $false
 if(!$SkipReadme){
     Copy-Item ".\README.md" "README.txt"
     $7zFiles.Add("README.txt")
+    foreach ($Line in (Get-Content "README.md")) {
+        if ($Line -match '^#[^#]') {
+            $Line = $Line -replace '^# ','[size=6]'
+            $Line = $Line + '[/size]'
+        }
+        elseif ($Line -match '^##[^#]') {
+            $Line = $Line -replace '^## ','[size=5]'
+            $Line = $Line + '[/size]'
+        }
+        elseif ($Line -match '^#') {
+            $Line = $Line -replace '^#* ','[size=4]'
+            $Line = $Line + '[/size]'
+        }
+        if ($inList -and $Line -notmatch '^\* ') {
+            $inList = $false
+            $null =  $bbcode.AppendLine('[/list]')
+        }
+        if (!$inList -and $Line -match '^\* ') {
+            $inList = $true
+            $null =  $bbcode.AppendLine('[list]')
+        }
+        if($inList -and $Line -match '^\* ') {
+            $Line = $Line -replace '^\* ', '[*]'
+        }
+        $Line = $Line -replace '`[^`]*`', '[font=Courier New]$1[/font]'
+        $null = $bbcode.AppendLine($Line)
+    }
+    $bbcode.ToString() | Set-Content -Encoding utf8NoBOM README.bbcode
 }
 
 if(Test-Path $ModInfo.Logo){
