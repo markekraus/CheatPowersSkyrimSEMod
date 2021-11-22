@@ -2,7 +2,7 @@
 
 A Skyrim Special Edition mod By Mark E. Kraus.
 
-## About Exit Cheat Powers
+## About Cheat Powers
 
 This mod adds several powers that work as shortcuts to common console command cheats.
 
@@ -12,7 +12,7 @@ This mod adds several powers that work as shortcuts to common console command ch
 * Cheat: Add Daedric Armor - Adds a full set of Daedric Armor
 * Cheat: Add Daedric Weapons - Adds all Daedric weapons and 9,999 Daedric Arrows.
 * Cheat: Add 10,000 Septims - Adds 10,000 Septims (gold) to the player.
-* Cheat: Toggle AI Detection - Toggles NPC's ability to detect to player.
+* Cheat: Toggle AI Detection - Toggles NPC's ability to detect the player.
 * Cheat: Toggle God Mode - Toggles God Mode on or off
 * Cheat: Toggle Collision - Toggles collision for the player. This allows the player to walk through walls, doors, floors, etc.
 
@@ -31,7 +31,7 @@ Download and install with Vortex and the FOMOD installer will take care of the r
 
 ## User Guide
 
-The cheat powers will be automatically added to your powers list. Magicka > Powers. Equip the desried power, use the power/shout button.
+The cheat powers will be automatically added to your powers list. Magicka > Powers. Equip the desired power, use the power/shout button.
 
 ## Compatibility
 
