@@ -1,0 +1,41 @@
+<!-- Created with build.ps1 by Mark E. Kraus --> 
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd"> 
+    <moduleName>Cheat Powers</moduleName> 
+    <installSteps order="Explicit"> 
+        <installStep name="Install"> 
+            <optionalFileGroups order="Explicit"> 
+                <group name="Main" type="SelectExactlyOne"> 
+                    <plugins order="Explicit">
+                        <plugin name="MarkekrausCheatPowers.esp (default)">
+                            <description>MarkekrausCheatPowers.esp (default). Adds several lesser powers that work as shortcuts to common console command cheats.</description>
+                            <image path="logo.png" />
+                            <files>
+                                <file source="MarkekrausCheatPowers.esp" destination="MarkekrausCheatPowers.esp" priority="0" />
+                            </files>
+                            <typeDescriptor>
+                                <type name="Optional"/>
+                            </typeDescriptor>
+                        </plugin>
+                    </plugins> 
+                </group> 
+                <group name="Scripts" type="SelectExactlyOne"> 
+                    <plugins order="Explicit"> 
+                        <plugin name="Install Scripts"> 
+                            <description>Installs the compiled scripts and their sources.</description>
+                            <image path="logo.png" />
+                            <files>
+                                <file source="scripts\MarkekrausCheatToggle.pex" destination="scripts\MarkekrausCheatToggle.pex" priority="0" />
+                                <file source="source\scripts\MarkekrausCheatToggle.psc" destination="source\scripts\MarkekrausCheatToggle.psc" priority="0" />
+                                <file source="scripts\MarkekrausAddCheatPowersScript.pex" destination="scripts\MarkekrausAddCheatPowersScript.pex" priority="0" />
+                                <file source="source\scripts\MarkekrausAddCheatPowersScript.psc" destination="source\scripts\MarkekrausAddCheatPowersScript.psc" priority="0" />
+                            </files>
+                            <typeDescriptor> 
+                                <type name="Optional"/> 
+                            </typeDescriptor> 
+                        </plugin> 
+                    </plugins> 
+                </group> 
+            </optionalFileGroups> 
+        </installStep> 
+    </installSteps> 
+</config>
