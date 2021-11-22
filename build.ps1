@@ -245,6 +245,10 @@ if(!$SkipReadme){
     $bbcode.ToString() | Set-Content -Encoding utf8NoBOM README.bbcode
 }
 
+if(Test-Path 'LICENSE'){
+    $7zFiles.Add('LICENSE')
+}
+
 if(Test-Path $ModInfo.Logo){
     $7zFiles.Add($ModInfo.logo)
 }
