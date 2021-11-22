@@ -239,7 +239,7 @@ if(!$SkipReadme){
         if($inList -and $Line -match '^\* ') {
             $Line = $Line -replace '^\* ', '[*]'
         }
-        $Line = $Line -replace '`[^`]*`', '[font=Courier New]$1[/font]'
+        $Line = $Line -replace '`([^`]*)`', '[font=Courier New]$1[/font]'
         $null = $bbcode.AppendLine($Line)
     }
     $bbcode.ToString() | Set-Content -Encoding utf8NoBOM README.bbcode
