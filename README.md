@@ -4,6 +4,11 @@
 
 A Skyrim Special Edition mod By Mark E. Kraus.
 
+My mods:
+
+* [Cheat Powers](https://www.nexusmods.com/skyrimspecialedition/mods/58892)
+* [Exit Combat Power](https://www.nexusmods.com/skyrimspecialedition/mods/58651)
+
 ## About Cheat Powers
 
 This mod adds several powers that work as shortcuts to common console command cheats.
