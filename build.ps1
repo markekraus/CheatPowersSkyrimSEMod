@@ -240,9 +240,10 @@ if(!$SkipReadme){
             $Line = $Line -replace '^\* ', '[*]'
         }
         $Line = $Line -replace '`([^`]*)`', '[font=Courier New]$1[/font]'
+        $Line = $Line -replace '!\[[^)]*\)'
         $null = $bbcode.AppendLine($Line)
     }
-    $bbcode.ToString() | Set-Content -Encoding utf8NoBOM README.bbcode
+    $bbcode.ToString() | Set-Content -Encoding utf8NoBOM README.bbcode -NoNewline
 }
 
 if(Test-Path 'LICENSE'){
