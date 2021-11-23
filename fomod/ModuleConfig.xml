@@ -6,11 +6,11 @@
             <optionalFileGroups order="Explicit"> 
                 <group name="Main" type="SelectExactlyOne"> 
                     <plugins order="Explicit">
-                        <plugin name="MarkekrausCheatPowers.esp (default)">
-                            <description>MarkekrausCheatPowers.esp (default). Adds several lesser powers that work as shortcuts to common console command cheats.</description>
+                        <plugin name="MarkekrausCheatPowers.esl (default)">
+                            <description>MarkekrausCheatPowers.esl (default). Adds several lesser powers that work as shortcuts to common console command cheats.</description>
                             <image path="logo.png" />
                             <files>
-                                <file source="MarkekrausCheatPowers.esp" destination="MarkekrausCheatPowers.esp" priority="0" />
+                                <file source="MarkekrausCheatPowers.esl" destination="MarkekrausCheatPowers.esl" priority="0" />
                             </files>
                             <typeDescriptor>
                                 <type name="Optional"/>

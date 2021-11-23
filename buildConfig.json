@@ -12,7 +12,7 @@
     "Logo": "logo.png"
   },
   "Plugins": [
-    "MarkekrausCheatPowers.esp"
+    "MarkekrausCheatPowers.esl"
   ],
   "Scripts": [
     "MarkekrausCheatToggle",
