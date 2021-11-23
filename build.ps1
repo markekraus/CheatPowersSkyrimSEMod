@@ -241,6 +241,7 @@ if(!$SkipReadme){
         }
         $Line = $Line -replace '`([^`]*)`', '[font=Courier New]$1[/font]'
         $Line = $Line -replace '!\[[^)]*\)'
+        $Line = $Line -replace '\[([^\]]*)\]\((https://www.nexusmods.com/skyrimspecialedition/mods/24858)\)', '[url=$2]$1[/url]'
         $null = $bbcode.AppendLine($Line)
     }
     $bbcode.ToString() | Set-Content -Encoding utf8NoBOM README.bbcode -NoNewline

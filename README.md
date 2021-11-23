@@ -18,8 +18,11 @@ This mod adds several powers that work as shortcuts to common console command ch
 * Cheat: Toggle Collision - Toggles collision for the player. This allows the player to walk through walls, doors, floors, etc.
 * Cheat: Toggle God Mode - Toggles God Mode on or off.
 
-
 ## Installation
+
+### Requirements
+
+[ConsoleUtilSSE](https://www.nexusmods.com/skyrimspecialedition/mods/24858) must be installed before installing this mod.
 
 ### NMM/Vortex
 
