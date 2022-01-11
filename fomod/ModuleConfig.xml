@@ -6,11 +6,12 @@
             <optionalFileGroups order="Explicit"> 
                 <group name="Main" type="SelectExactlyOne"> 
                     <plugins order="Explicit">
-                        <plugin name="MarkekrausCheatPowers.esl (default)">
-                            <description>MarkekrausCheatPowers.esl (default). Adds several lesser powers that work as shortcuts to common console command cheats.</description>
+                        <plugin name="MarkekrausCheatPowers.esp">
+                            <description>Adds several lesser powers that work as shortcuts to common console command cheats.</description>
                             <image path="logo.png" />
                             <files>
-                                <file source="MarkekrausCheatPowers.esl" destination="MarkekrausCheatPowers.esl" priority="0" />
+                                <file source="MarkekrausCheatPowers.esp" destination="MarkekrausCheatPowers.esp" priority="0" />
+                                <file source="MarkekrausCheatPowers.bsa" destination="MarkekrausCheatPowers.bsa" priority="0" />
                             </files>
                             <typeDescriptor>
                                 <type name="Optional"/>
@@ -18,16 +19,22 @@
                         </plugin>
                     </plugins> 
                 </group> 
-                <group name="Scripts" type="SelectExactlyOne"> 
+                <group name="Install Script Sources?" type="SelectExactlyOne"> 
                     <plugins order="Explicit"> 
-                        <plugin name="Install Scripts"> 
-                            <description>Installs the compiled scripts and their sources.</description>
+                        <plugin name="No (Default)"> 
+                            <description>Skips installing script sources.</description>
+                            <image path="logo.png" />
+                            <files></files>
+                        <typeDescriptor> 
+                            <type name="Optional"/> 
+                        </typeDescriptor> 
+                        </plugin>
+                        <plugin name="Yes (For Mod Developers)"> 
+                            <description>Installs script sources.</description>
                             <image path="logo.png" />
                             <files>
-                                <file source="scripts\MarkekrausCheatToggle.pex" destination="scripts\MarkekrausCheatToggle.pex" priority="0" />
                                 <file source="source\scripts\MarkekrausCheatToggle.psc" destination="source\scripts\MarkekrausCheatToggle.psc" priority="0" />
-                                <file source="scripts\MarkekrausAddCheatPowersScript.pex" destination="scripts\MarkekrausAddCheatPowersScript.pex" priority="0" />
-                                <file source="source\scripts\MarkekrausAddCheatPowersScript.psc" destination="source\scripts\MarkekrausAddCheatPowersScript.psc" priority="0" />
+                                <file source="source\scripts\MEKCHPModInitializationScript.psc" destination="source\scripts\MEKCHPModInitializationScript.psc" priority="0" />
                             </files>
                             <typeDescriptor> 
                                 <type name="Optional"/> 
