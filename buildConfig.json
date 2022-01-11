@@ -1,22 +1,14 @@
 {
-  "SkyrimSE": {
-    "DataPath": "D:\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data"
-  },
+  "$schema": "http://mekschemas.netlify.app/modpackager/v2/",
+  "UnfuzerPath": "D:\\Steam\\steamapps\\common\\Skyrim Special Edition\\Tools\\unfuzer",
   "ModInfo": {
     "Name": "Cheat Powers",
-    "Version": "1.0.0",
+    "Version": "2.0.0",
     "Author": "Mark E. Kraus",
     "Description": "Adds several lesser powers that work as shortcuts to common console command cheats.",
     "Website": "https://www.nexusmods.com/skyrimspecialedition/mods/58892",
     "Category": "Cheats and God items",
     "Logo": "logo.png"
   },
-  "Plugins": [
-    "MarkekrausCheatPowers.esl"
-  ],
-  "Scripts": [
-    "MarkekrausCheatToggle",
-    "MarkekrausAddCheatPowersScript"
-  ],
-  "PackageName": "MarkekrausCheatPowersSkyrimSE.7z"
+  "Plugin": "MarkekrausCheatPowers.esp"
 }
